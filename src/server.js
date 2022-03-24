@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 5001;
 
+
 // express allows to listlen 
 
 
@@ -15,4 +16,31 @@ app.listen(port, () => {
     console.log(`Listlening on ${port} `)
 })
 
+// CRUD - READ
+// In Express, we handle a GET request with the get method:
+//               app.get(endpoint, callback)
 
+app.get('/', (req, res) => {
+    res.send('Hello World')
+  })
+
+
+//   CRUD - CREATE
+
+
+app.post('/', (req, res) => {
+   
+  })
+
+
+//   CRUD - UPDATE
+
+app.put('/', (req, res) => {
+
+})
+
+//CRUD = DELETE
+
+app.delete('/quotes', (req, res) => {
+  
+  })
